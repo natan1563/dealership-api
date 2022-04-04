@@ -1,0 +1,12 @@
+{
+  "db": {
+    "user": "root",
+    "pass": "root",
+    "host": "localhost",
+    "name": "dealership",
+    "sgbd": "mysql"
+  },
+  "app": {
+    "port": 3000
+  }
+}
