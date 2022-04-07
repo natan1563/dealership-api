@@ -1,16 +1,11 @@
 const express = require('express')
 const config = require('config')
 const app = express()
-const db = require('./Database/Dealership_db')
+const bodyParser = require('body-parser')
+const manufacturerRoute = require('./Routes/ManufacturerRoute')
 
-app.get('/', async(req, res, next) => {
-  try {
-    await db.authenticate();
-    res.send('YES, YES!!! OH YEAH MY FRIEND \\o/')
-  } catch (err) {
-    res.send(err.message)
-  }
-})
+app.use(express.json())
+app.use('/api/manufacturer', manufacturerRoute)
 
 app.listen(config.get('app.port'), () => {
   console.log(`Running`)

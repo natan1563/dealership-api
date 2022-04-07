@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/natan1563/dealership-api#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "config": "^3.3.7",
     "express": "^4.17.3",
     "mysql2": "^2.3.3",
