@@ -38,6 +38,7 @@ Vehicle.init({
 
   manufacturer_id: {
     type: DataTypes.INTEGER,
+    allowNull: false,
     references: {
       model: Manufacturer,
       key: 'id',
@@ -45,8 +46,9 @@ Vehicle.init({
     }
   },
 
-  cliente_id: {
+  client_id: {
     type: DataTypes.INTEGER,
+    allowNull: false,
     references: {
       model: Cliente,
       key: 'id',

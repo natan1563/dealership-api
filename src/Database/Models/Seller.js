@@ -63,8 +63,8 @@ Seller.init({
   freezeTableName: true,
   createdAt: "created_at",
   updatedAt: "updated_at",
-  modelName: "Manufacturer",
-  tableName: "manufacturer"
+  modelName: "Seller",
+  tableName: "seller"
 })
 
 module.exports = Seller

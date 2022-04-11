@@ -29,3 +29,5 @@ Log.init(
     updatedAt: 'updated_at'
   }
 )
+
+module.exports = Log
