@@ -3,6 +3,7 @@ const manufacturerTable = require('./Models/Manufacturer')
 const clientTable = require('./Models/Cliente')
 const addressTable = require('./Models/Address')
 const sellerTable = require('./Models/Seller')
+const logTable = require('./Models/Log')
 
 vehicleTable
   .sync()
@@ -28,3 +29,8 @@ sellerTable
   .sync()
   .then(() => console.info('The Seller table has be created'))
   .catch((e) => console.error('Ops! Cant be create seller table', e.message))
+
+logTable
+  .sync()
+  .then(() => console.info('The Log table has be created'))
+  .catch((e) => console.error('Ops! Cant be create Log table', e.message))
