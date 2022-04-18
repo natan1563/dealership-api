@@ -1,7 +1,7 @@
 {
   "db": {
     "user": "root",
-    "pass": "root",
+    "pass": "",
     "host": "localhost",
     "name": "dealership",
     "sgbd": "mysql"
