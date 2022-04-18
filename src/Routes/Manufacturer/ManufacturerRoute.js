@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const Manufacturer = require('../Models/Manufacturer')
+const Manufacturer = require('../../Models/Manufacturer')
 
 router.get('/', async (_, res) => {
   const allManufacuteres = await Manufacturer.list()

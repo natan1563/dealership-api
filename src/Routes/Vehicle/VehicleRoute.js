@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const Vehicle = require('../Models/Vehicle')
+const Vehicle = require('../../Models/Vehicle')
 
 router.get('/', async (req, res) => {
   const allVehicles = await Vehicle.list()
