@@ -2,9 +2,9 @@ const { Model, DataTypes, Deferrable } = require('sequelize')
 const sequelize = require('../Dealership_db')
 const Address = require('./Address')
 
-class Cliente extends Model {}
+class Client extends Model {}
 
-Cliente.init({
+Client.init({
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -63,10 +63,10 @@ Cliente.init({
 }, {
   sequelize,
   freezeTableName: true,
-  modelName: 'Cliente',
-  tableName: 'cliente',
+  modelName: 'Client',
+  tableName: 'client',
   createdAt: 'created_at',
   updatedAt: 'updated_at'
 })
 
-module.exports = Cliente
+module.exports = Client

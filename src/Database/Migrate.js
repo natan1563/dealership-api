@@ -1,6 +1,6 @@
 const vehicleTable = require('./Models/Vehicle')
 const manufacturerTable = require('./Models/Manufacturer')
-const clientTable = require('./Models/Cliente')
+const clientTable = require('./Models/Client')
 const addressTable = require('./Models/Address')
 const sellerTable = require('./Models/Seller')
 const logTable = require('./Models/Log')
@@ -17,8 +17,8 @@ manufacturerTable
 
 clientTable
   .sync()
-  .then(() => console.log('Cliente table has be created'))
-  .catch((e) => console.error('Cliente table does\'nt be created', e.message))
+  .then(() => console.log('Client table has be created'))
+  .catch((e) => console.error('Client table does\'nt be created', e.message))
 
 addressTable
   .sync()

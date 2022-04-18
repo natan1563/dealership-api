@@ -1,6 +1,6 @@
 const {  DataTypes, Model, Deferrable } = require('sequelize')
 const sequelize = require('../Dealership_db')
-const Cliente = require('./Cliente')
+const Client = require('./Client')
 const Manufacturer = require('./Manufacturer')
 
 class Vehicle extends Model {}
@@ -50,7 +50,7 @@ Vehicle.init({
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
-      model: Cliente,
+      model: Client,
       key: 'id',
       deferrable: Deferrable.INITIALLY_IMMEDIATE
     }
