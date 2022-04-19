@@ -6,5 +6,5 @@ const routes = require('./Routes/index')
 app.use('/api', routes)
 
 app.listen(config.get('app.port'), () => {
-  console.log(`Running`)
+  console.info(`Running on the port ${config.get('app.port')}`)
 })
