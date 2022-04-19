@@ -7,9 +7,9 @@ const logTable = require('./Models/Log')
   
 async function run() {
   await manufacturerTable
-  .sync()
-  .then(() => console.log('Manufacturer table has be created'))
-  .catch((e) => console.error('Manufacturer table does\'nt be created', e.message))
+    .sync()
+    .then(() => console.log('Manufacturer table has be created'))
+    .catch((e) => console.error('Manufacturer table does\'nt be created', e.message))
 
   await addressTable
     .sync()
